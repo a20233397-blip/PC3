@@ -70,7 +70,7 @@ with st.sidebar:
 # Verifica si el usuario ha seleccionado la opción "Inicio" en el menú de navegación horizontal.
 # OJO: En caso que elijas el menú de la barra lateral (sidebar) debes cambiar "selected" por "opciones"
 if opciones == 'Inicio':
-    st.markdown("<h1 style='text-align: center;'>Mi Blog</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align: center;'>Lorephilia</h1>", unsafe_allow_html=True)
     # Muestra un título principal utilizando HTML -> st.markdown("...", unsafe_allow_html=True)
     # La etiqueta <h1> define un encabezado de nivel 1 -> "<h1 ...>...</h1>"
     # El estilo CSS 'text-align: center' centra el texto -> style='text-align: center;'
@@ -80,20 +80,20 @@ if opciones == 'Inicio':
     col1, col2 = st.columns(2)
 
     # Muestra una imagen en la primera columna
-    col1.image("ellie.png", caption='Ellie', width=300)
+    col1.image("lore.png", caption='Lore', width=300)
     # "ellie.png" es el archivo de imagen que se visualizará -> Aquí debes reemplazar por tu foto de perfil
     # El texto "Ellie" aparecerá como descripción de la imagen
     # width=300 establece el ancho de la imagen en 300 píxeles
 
     # Define una cadena de texto multilínea que contiene una guía para redactar una presentación personal.
     texto = """
-    Aquí escribe una presentación creativa sobre ti.
-    ¿Quién eres?, 
-    ¿De dónde eres?, 
-    ¿Qué estudias?, 
-    ¿Qué te gusta de tu carrera?, 
-    ¿Qué te gustaría hacer en el futuro?, 
-    ¿Qué te gusta hacer en tu tiempo libre?
+    Hola, soy Lorena, tengo 23 años y estudio Publicidad en la PUCP. 
+    Soy de Ica y me encantan los gatos. Lo que más me gusta de mi carrera 
+    es la manera en la que las comunicaciones posibilitan la transformación 
+    de la sociedad impactando directamente en el sentir emocional de la gente.
+    En el futuro me gustaría trabajar como directiva creativa en el rubro musical. 
+    Una de mis pasiones es escuchar música y crear playlists. Mi comida
+    favorita es la carapulcra con sopa seca y disfruto de pasar el tiempo libre con mis amigos conversando y paseando.
     """
 
     # Muestra el texto en la segunda columna utilizando HTML
@@ -103,16 +103,19 @@ if opciones == 'Inicio':
     # unsafe_allow_html=True permite que Streamlit interprete las etiquetas HTML incluidas en la cadena
 
 elif opciones == 'Experiencia':
-    st.markdown("<h1 style='text-align: center;'>Nombre a la sección de experiencia 💻</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align: center;'>Mi experiencia en el curso 💻</h1>", unsafe_allow_html=True)
 
     # Agregar un  texto para la respuesta
     texto_2 = """
-    Aquí escribe tu experiencia aprendiendo a programar. 
-    ¿Cómo te sentiste al principio?, 
-    ¿Qué te ha enseñado la programación?, 
-    ¿Qué te gusta de programar?, 
-    ¿Qué te gustaría hacer con la programación en el futuro?
-    ¿Cómo se relaciona lo que haz aprendido con tu carrera?
+   
+    El curso de Pensamiento Computacional para comunicaciones ha sido una manera de adentrarme de manera básica en el mundo de la programación. 
+    Si bien en un comienzo la poca familiaridad con el ámbito me causó ansiedad y estrés, posteriormente con la guía de la profesora todos los problemas y dudas fueron resueltos.
+    En ese sentido, el curso me ha ayudado a desenvolverme de manera básica necesaria en el entorno de google colab, python y repositorios como GitHub y Visual Studio Code
+    La programación me ha ayudado de manera satisfactioria a simplificar procesos, formular clasificaciones y visualizar de manera más dinámica información de gran tamaño.
+    Lo que más me ha gustado de esta experiencia es haber logrado cumplir con las peticiones que se han ido evaluando progresivamente con la orientación debida. En el futuro, me gustaría profundizar
+    mis habilidades y conocimientos explorando otros lenguajes de programación para poder desenvolverme en mi carrera explorando horizontes de manera efectiva y sin limitarme por el espacio temporal que esto tomaría. 
+    Me gustaría lograr crear espacios que gestionen ayuda y conecten a las personas a través de procesos digitales automatizados con vistas a una construcción equitativa y solidaria de la sociedad, crear espacios de arte.
+    En relación con mi carrera, la programación en python funciona como herramienta capaz de dilucidar las complejidades que atraviesan las personas y lograr organizar toda esta data de manera que sea capaz de funcionar como un repositorio de información humana y apartir de ello, lograr un acercamiento que los represemte.
     """
 
     # Mostramos el texto
